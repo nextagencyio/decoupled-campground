@@ -1,0 +1,235 @@
+{
+  "data": {
+    "nodeCampsites": {
+      "__typename": "NodeCampsiteConnection",
+      "nodes": [
+        {
+          "__typename": "NodeCampsite",
+          "id": "campsite-lakefront-rv",
+          "title": "Lakefront RV Sites",
+          "path": "/campsites/lakefront-rv-sites",
+          "body": {
+            "processed": "<p>Our premium lakefront RV sites offer the best views at Pinecrest. Wake up to morning mist rising from the lake, fish right from your site, and enjoy stunning sunsets from your campfire ring. These spacious pull-through sites accommodate rigs up to 45 feet and include full hookups with 50-amp service.</p><h2>Site Details</h2><p>Sites L1 through L15 are arranged along the north shore of Pinecrest Lake, each with a private lake view. Concrete pads, a picnic table, fire ring, and mature shade trees are standard at every site.</p>",
+            "summary": "Our premium lakefront RV sites offer the best views at Pinecrest. Wake up to morning mist rising from the lake, fish right from your site, and enjoy stunning sunsets from your campfire ring. These spa"
+          },
+          "siteType": [
+            {
+              "id": "RV Full Hookup",
+              "name": "RV Full Hookup"
+            }
+          ],
+          "rate": "$65/night",
+          "maxOccupancy": "8 guests",
+          "hookups": [
+            "50-amp electric",
+            "Water",
+            "Sewer",
+            "Cable TV",
+            "WiFi"
+          ],
+          "features": [
+            "Lake view",
+            "Pull-through",
+            "Concrete pad",
+            "Fire ring",
+            "Picnic table",
+            "Shade trees"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80",
+            "alt": "RV campsite with lake view at sunset",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeCampsite",
+          "id": "campsite-woodland-tent",
+          "title": "Woodland Tent Sites",
+          "path": "/campsites/woodland-tent-sites",
+          "body": {
+            "processed": "<p>Our woodland tent sites are tucked among towering white pines and hardwoods, offering a true back-to-nature experience with plenty of privacy between sites. Each site includes a level tent pad, fire ring, picnic table, and bear-proof food storage locker.</p><h2>Site Details</h2><p>Sites W1 through W30 are spread along shaded forest paths, most within a 5-minute walk of the central bathhouse. Water spigots are located at convenient intervals throughout the tent camping area.</p>",
+            "summary": "Our woodland tent sites are tucked among towering white pines and hardwoods, offering a true back-to-nature experience with plenty of privacy between sites. Each site includes a level tent pad, fire r"
+          },
+          "siteType": [
+            {
+              "id": "Tent Site",
+              "name": "Tent Site"
+            }
+          ],
+          "rate": "$30/night",
+          "maxOccupancy": "6 guests",
+          "hookups": [],
+          "features": [
+            "Level tent pad",
+            "Fire ring",
+            "Picnic table",
+            "Bear box",
+            "Wooded privacy",
+            "Near bathhouse"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+            "alt": "Tent pitched among tall pine trees in a wooded campsite",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeCampsite",
+          "id": "campsite-rustic-cabin",
+          "title": "Rustic Pine Cabins",
+          "path": "/campsites/rustic-cabins",
+          "body": {
+            "processed": "<p>Our charming rustic cabins offer a step up from tent camping while keeping you close to nature. Each cabin sleeps up to six with a double bed, bunk beds, a small porch, and electricity. Bring your own bedding and cooking supplies, or add a linen package when you book.</p><h2>Cabin Features</h2><p>Eight cabins (C1-C8) are clustered near the lake with easy access to the swimming beach and boat launch. Each cabin has a covered porch with Adirondack chairs, an outdoor fire ring, and a picnic table.</p>",
+            "summary": "Our charming rustic cabins offer a step up from tent camping while keeping you close to nature. Each cabin sleeps up to six with a double bed, bunk beds, a small porch, and electricity. Bring your own"
+          },
+          "siteType": [
+            {
+              "id": "Cabin",
+              "name": "Cabin"
+            }
+          ],
+          "rate": "$95/night",
+          "maxOccupancy": "6 guests",
+          "hookups": [
+            "Electric only"
+          ],
+          "features": [
+            "Double bed",
+            "Bunk beds",
+            "Covered porch",
+            "Fire ring",
+            "Lake access",
+            "Electricity"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=800&q=80",
+            "alt": "Rustic wooden cabin nestled among pine trees",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeCampsite",
+          "id": "campsite-glamping",
+          "title": "Glamping Safari Tents",
+          "path": "/campsites/glamping-tents",
+          "body": {
+            "processed": "<p>Experience camping in luxury with our safari-style glamping tents. Each canvas tent is furnished with a queen bed, nightstands, solar-powered string lights, and a private deck with valley views. Fresh linens, towels, and a coffee maker are included.</p><h2>Glamping Details</h2><p>Our four glamping tents (G1-G4) are positioned on a hillside overlooking the valley, providing maximum privacy and spectacular sunrise views. Each tent sits on a raised wooden platform with a private deck.</p>",
+            "summary": "Experience camping in luxury with our safari-style glamping tents. Each canvas tent is furnished with a queen bed, nightstands, solar-powered string lights, and a private deck with valley views. Fresh"
+          },
+          "siteType": [
+            {
+              "id": "Glamping",
+              "name": "Glamping"
+            }
+          ],
+          "rate": "$135/night",
+          "maxOccupancy": "2 guests",
+          "hookups": [
+            "Solar electric"
+          ],
+          "features": [
+            "Queen bed",
+            "Linens provided",
+            "Private deck",
+            "Valley view",
+            "Coffee maker",
+            "String lights"
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?w=800&q=80",
+            "alt": "Luxury glamping tent with comfortable furnishings and string lights",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": false
+        }
+      ]
+    }
+  }
+}

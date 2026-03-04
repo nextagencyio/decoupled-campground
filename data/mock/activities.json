@@ -1,0 +1,147 @@
+{
+  "data": {
+    "nodeActivities": {
+      "__typename": "NodeActivityConnection",
+      "nodes": [
+        {
+          "__typename": "NodeActivity",
+          "id": "activity-hiking",
+          "title": "Hiking Trails",
+          "path": "/activities/hiking-trails",
+          "body": {
+            "processed": "<p>Explore 12 miles of well-maintained hiking trails winding through pine forests, along the lakeshore, and up to scenic overlooks with panoramic views of the surrounding countryside. Trail maps are available at the camp office and posted at all trailheads.</p><h2>Trail Guide</h2><ul><li><strong>Lakeshore Loop (1.5 miles, Easy)</strong> - Flat path circling Pinecrest Lake, perfect for families</li><li><strong>Pine Ridge Trail (3 miles, Moderate)</strong> - Climb through mature pine forest to the ridge overlook</li><li><strong>Deer Hollow Trail (4 miles, Moderate)</strong> - Follow the creek through a scenic hollow</li><li><strong>Summit Trail (3.5 miles, Challenging)</strong> - Steep climb to the highest point with 360-degree views</li></ul>",
+            "summary": "Explore 12 miles of well-maintained hiking trails winding through pine forests, along the lakeshore, and up to scenic overlooks with panoramic views of the surrounding countryside. Trail maps are avai"
+          },
+          "activityType": [
+            {
+              "id": "Hiking",
+              "name": "Hiking"
+            }
+          ],
+          "difficulty": "Easy to Challenging (varies by trail)",
+          "duration": "30 minutes to 3 hours",
+          "bestSeason": "Year-round (snowshoe in winter)",
+          "equipmentProvided": false,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
+            "alt": "Hikers on a forested trail through tall pine trees",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeActivity",
+          "id": "activity-fishing",
+          "title": "Lake Fishing",
+          "path": "/activities/fishing",
+          "body": {
+            "processed": "<p>Pinecrest Lake is stocked annually with rainbow trout, largemouth bass, and bluegill, making it a fantastic fishing destination for anglers of all skill levels. Fish from the shore, the fishing dock, or rent one of our rowboats or canoes for an on-the-water experience.</p><h2>Fishing Information</h2><ul><li>State fishing license required for ages 16+</li><li>Catch-and-release encouraged for bass over 18 inches</li><li>Rowboat and canoe rentals available at the dock</li><li>Fishing tackle and bait available at the General Store</li><li>Kids' fishing clinics held Saturday mornings in summer</li></ul>",
+            "summary": "Pinecrest Lake is stocked annually with rainbow trout, largemouth bass, and bluegill, making it a fantastic fishing destination for anglers of all skill levels. Fish from the shore, the fishing dock, "
+          },
+          "activityType": [
+            {
+              "id": "Fishing",
+              "name": "Fishing"
+            }
+          ],
+          "difficulty": "Easy (all skill levels)",
+          "duration": "1-4 hours",
+          "bestSeason": "May through October",
+          "equipmentProvided": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80",
+            "alt": "Person fishing from a dock on a calm lake at sunrise",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeActivity",
+          "id": "activity-kayaking",
+          "title": "Kayaking & Canoeing",
+          "path": "/activities/kayaking-canoeing",
+          "body": {
+            "processed": "<p>Paddle across the calm waters of Pinecrest Lake or explore the scenic Cedar Creek, which flows from the lake through two miles of wetlands rich with wildlife. Single and tandem kayaks, canoes, and stand-up paddleboards are available for rent by the hour or day.</p><h2>Rental Rates</h2><ul><li>Single kayak: $15/hour, $45/day</li><li>Tandem kayak: $25/hour, $65/day</li><li>Canoe: $20/hour, $55/day</li><li>Stand-up paddleboard: $20/hour, $50/day</li></ul><p>Life jackets are provided with every rental. A brief orientation is required for first-time paddlers.</p>",
+            "summary": "Paddle across the calm waters of Pinecrest Lake or explore the scenic Cedar Creek, which flows from the lake through two miles of wetlands rich with wildlife. Single and tandem kayaks, canoes, and sta"
+          },
+          "activityType": [
+            {
+              "id": "Kayaking",
+              "name": "Kayaking"
+            }
+          ],
+          "difficulty": "Easy to Moderate",
+          "duration": "1-4 hours",
+          "bestSeason": "May through September",
+          "equipmentProvided": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1472745433479-4556f22e32c2?w=800&q=80",
+            "alt": "Kayakers paddling on a calm forest lake",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1472745433479-4556f22e32c2?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1472745433479-4556f22e32c2?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1472745433479-4556f22e32c2?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

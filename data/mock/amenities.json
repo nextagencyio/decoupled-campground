@@ -1,0 +1,148 @@
+{
+  "data": {
+    "nodeAmenities": {
+      "__typename": "NodeAmenityConnection",
+      "nodes": [
+        {
+          "__typename": "NodeAmenity",
+          "id": "amenity-pool",
+          "title": "Heated Swimming Pool & Splash Pad",
+          "path": "/amenities/swimming-pool",
+          "body": {
+            "processed": "<p>Cool off in our heated outdoor swimming pool or let the kids play at the adjacent splash pad. The pool area includes comfortable lounge chairs, shade umbrellas, and a poolside snack bar serving ice cream, drinks, and light snacks.</p><h2>Pool Rules</h2><ul><li>Children under 12 must be accompanied by an adult</li><li>No glass containers in the pool area</li><li>Swim at your own risk - no lifeguard on duty</li><li>Pool towels not provided, please bring your own</li></ul>",
+            "summary": "Cool off in our heated outdoor swimming pool or let the kids play at the adjacent splash pad. The pool area includes comfortable lounge chairs, shade umbrellas, and a poolside snack bar serving ice cr"
+          },
+          "amenityCategory": [
+            {
+              "id": "Pool & Water",
+              "name": "Pool & Water"
+            }
+          ],
+          "locationOnProperty": "Central area, near the General Store",
+          "hours": "10:00 AM - 8:00 PM daily (Memorial Day to Labor Day)",
+          "included": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800&q=80",
+            "alt": "Outdoor swimming pool surrounded by trees",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeAmenity",
+          "id": "amenity-store",
+          "title": "Camp General Store",
+          "path": "/amenities/general-store",
+          "body": {
+            "processed": "<p>Forgot the marshmallows? Our well-stocked camp store has everything you need for a great camping trip, from firewood and ice to groceries, camping supplies, and souvenirs. We also carry local products including honey, maple syrup, and homemade jams.</p><h2>What We Carry</h2><ul><li>Firewood, kindling, and fire starters</li><li>Ice, beverages, and snacks</li><li>Basic groceries and canned goods</li><li>Camping gear and supplies</li><li>Fishing tackle and bait</li><li>Souvenirs and local products</li></ul>",
+            "summary": "Forgot the marshmallows? Our well-stocked camp store has everything you need for a great camping trip, from firewood and ice to groceries, camping supplies, and souvenirs. We also carry local products"
+          },
+          "amenityCategory": [
+            {
+              "id": "General Store",
+              "name": "General Store"
+            },
+            {
+              "id": "Convenience",
+              "name": "Convenience"
+            }
+          ],
+          "locationOnProperty": "Main entrance area, next to the check-in office",
+          "hours": "7:00 AM - 9:00 PM daily",
+          "included": false,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&q=80",
+            "alt": "Rustic camp general store with outdoor display",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeAmenity",
+          "id": "amenity-bathhouse",
+          "title": "Modern Bathhouse & Laundry",
+          "path": "/amenities/bathhouse",
+          "body": {
+            "processed": "<p>Our recently renovated bathhouse features private shower stalls, accessible restrooms, and a coin-operated laundry facility. The bathhouse is cleaned three times daily to maintain high standards of hygiene and comfort.</p><h2>Facilities</h2><ul><li>12 private shower stalls with hot water</li><li>Accessible restroom stalls</li><li>6 coin-operated washers and dryers</li><li>Baby changing stations</li><li>Hair dryer stations</li></ul>",
+            "summary": "Our recently renovated bathhouse features private shower stalls, accessible restrooms, and a coin-operated laundry facility. The bathhouse is cleaned three times daily to maintain high standards of hy"
+          },
+          "amenityCategory": [
+            {
+              "id": "Restrooms & Showers",
+              "name": "Restrooms & Showers"
+            }
+          ],
+          "locationOnProperty": "Central campground, between tent and RV areas",
+          "hours": "Open 24 hours",
+          "included": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
+            "alt": "Clean modern campground bathhouse facility",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

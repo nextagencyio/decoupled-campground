@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Pinecrest Campground & RV Park",
+          "path": "/homepage",
+          "heroTitle": "Your Home Under the Pines",
+          "heroSubtitle": "Pinecrest Campground & RV Park",
+          "heroDescription": {
+            "processed": "<p>Nestled on 85 wooded acres with a private 40-acre lake, Pinecrest offers the perfect escape into nature. Whether you prefer tent camping, RV sites with full hookups, or cozy cabins, we have a spot waiting for you.</p>",
+            "summary": "Nestled on 85 wooded acres with a private 40-acre lake, Pinecrest offers the perfect escape into nature. Whether you prefer tent camping, RV sites with full hookups, or cozy cabins, we have a spot wai"
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-sites",
+              "title": "",
+              "number": "120",
+              "label": "Campsites"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-acres",
+              "title": "",
+              "number": "85",
+              "label": "Wooded Acres"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-trails",
+              "title": "",
+              "number": "12",
+              "label": "Miles of Trails"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-lake",
+              "title": "",
+              "number": "40",
+              "label": "Acre Private Lake"
+            }
+          ],
+          "featuredItemsTitle": "Featured Campsites",
+          "ctaTitle": "Book Your Campsite Today",
+          "ctaDescription": {
+            "processed": "<p>Reserve your favorite campsite online or call our friendly office staff. Early booking is recommended for peak summer weekends and holiday periods.</p>",
+            "summary": "Reserve your favorite campsite online or call our friendly office staff. Early booking is recommended for peak summer weekends and holiday periods."
+          },
+          "ctaPrimary": "Reserve a Site",
+          "ctaSecondary": "View Campground Map"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Landing page with hero section, stats, and call-to-action areas for the campground",
+      "fields": [
+        {
+          "id": "hero_title",
+          "label": "Hero Title",
+          "type": "string",
+          "description": "Main headline in the hero section"
+        },
+        {
+          "id": "hero_subtitle",
+          "label": "Hero Subtitle",
+          "type": "string",
+          "description": "Secondary text below the hero title"
+        },
+        {
+          "id": "hero_description",
+          "label": "Hero Description",
+          "type": "text",
+          "description": "Longer descriptive text for the hero section"
+        },
+        {
+          "id": "stats_items",
+          "label": "Statistics",
+          "type": "paragraph(stat_item)[]",
+          "description": "Key statistics about the campground"
+        },
+        {
+          "id": "featured_items_title",
+          "label": "Featured Items Title",
+          "type": "string",
+          "description": "Title for the featured campsites section"
+        },
+        {
+          "id": "cta_title",
+          "label": "CTA Title",
+          "type": "string",
+          "description": "Call-to-action section title"
+        },
+        {
+          "id": "cta_description",
+          "label": "CTA Description",
+          "type": "text",
+          "description": "Call-to-action descriptive text"
+        },
+        {
+          "id": "cta_primary",
+          "label": "Primary CTA",
+          "type": "string",
+          "description": "Primary call-to-action button text"
+        },
+        {
+          "id": "cta_secondary",
+          "label": "Secondary CTA",
+          "type": "string",
+          "description": "Secondary call-to-action button text"
+        }
+      ]
+    },
+    {
+      "bundle": "campsite",
+      "label": "Campsite",
+      "description": "Individual campsite or accommodation option",
+      "body": true,
+      "fields": [
+        {
+          "id": "site_type",
+          "label": "Site Type",
+          "type": "term(site_types)[]",
+          "description": "Type of campsite"
+        },
+        {
+          "id": "rate",
+          "label": "Nightly Rate",
+          "type": "string",
+          "description": "Price per night"
+        },
+        {
+          "id": "max_occupancy",
+          "label": "Max Occupancy",
+          "type": "string",
+          "description": "Maximum number of guests"
+        },
+        {
+          "id": "hookups",
+          "label": "Hookups",
+          "type": "string[]",
+          "description": "Available utility hookups"
+        },
+        {
+          "id": "features",
+          "label": "Site Features",
+          "type": "string[]",
+          "description": "Features of the campsite"
+        },
+        {
+          "id": "image",
+          "label": "Campsite Image",
+          "type": "image",
+          "description": "Main image of the campsite"
+        },
+        {
+          "id": "featured",
+          "label": "Featured",
+          "type": "bool",
+          "description": "Whether this campsite is featured"
+        }
+      ]
+    },
+    {
+      "bundle": "amenity",
+      "label": "Amenity",
+      "description": "Campground amenity or facility",
+      "body": true,
+      "fields": [
+        {
+          "id": "amenity_category",
+          "label": "Category",
+          "type": "term(amenity_categories)[]",
+          "description": "Amenity category"
+        },
+        {
+          "id": "location_on_property",
+          "label": "Location",
+          "type": "string",
+          "description": "Where the amenity is located on the property"
+        },
+        {
+          "id": "hours",
+          "label": "Hours",
+          "type": "string",
+          "description": "Operating hours"
+        },
+        {
+          "id": "included",
+          "label": "Included with Stay",
+          "type": "bool",
+          "description": "Whether this amenity is included with campsite booking"
+        },
+        {
+          "id": "image",
+          "label": "Amenity Image",
+          "type": "image",
+          "description": "Image of the amenity"
+        }
+      ]
+    },
+    {
+      "bundle": "activity",
+      "label": "Activity",
+      "description": "Recreational activity available at or near the campground",
+      "body": true,
+      "fields": [
+        {
+          "id": "activity_type",
+          "label": "Activity Type",
+          "type": "term(activity_types)[]",
+          "description": "Type of activity"
+        },
+        {
+          "id": "difficulty",
+          "label": "Difficulty",
+          "type": "string",
+          "description": "Difficulty level"
+        },
+        {
+          "id": "duration",
+          "label": "Duration",
+          "type": "string",
+          "description": "Typical duration"
+        },
+        {
+          "id": "best_season",
+          "label": "Best Season",
+          "type": "string",
+          "description": "Best time of year for this activity"
+        },
+        {
+          "id": "equipment_provided",
+          "label": "Equipment Provided",
+          "type": "bool",
+          "description": "Whether equipment is available for rent or included"
+        },
+        {
+          "id": "image",
+          "label": "Activity Image",
+          "type": "image",
+          "description": "Image of the activity"
+        }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages for about, rules, policies, etc.",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A single statistic with number and label",
+      "fields": [
+        {
+          "id": "number",
+          "label": "Number",
+          "type": "string!",
+          "description": "The statistic number or value (required)"
+        },
+        {
+          "id": "label",
+          "label": "Label",
+          "type": "string!",
+          "description": "Description label for the statistic (required)"
+        }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "vocabulary": "site_types",
+      "label": "Site Types",
+      "terms": ["Tent Site", "RV Full Hookup", "RV Partial Hookup", "Cabin", "Glamping", "Group Site"]
+    },
+    {
+      "vocabulary": "amenity_categories",
+      "label": "Amenity Categories",
+      "terms": ["Restrooms & Showers", "Recreation", "Convenience", "Pool & Water", "Pet Friendly", "General Store"]
+    },
+    {
+      "vocabulary": "activity_types",
+      "label": "Activity Types",
+      "terms": ["Hiking", "Fishing", "Swimming", "Kayaking", "Mountain Biking", "Wildlife Viewing", "Stargazing"]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-sites",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "120",
+        "label": "Campsites"
+      }
+    },
+    {
+      "id": "stat-acres",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "85",
+        "label": "Wooded Acres"
+      }
+    },
+    {
+      "id": "stat-trails",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "12",
+        "label": "Miles of Trails"
+      }
+    },
+    {
+      "id": "stat-lake",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "40",
+        "label": "Acre Private Lake"
+      }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Pinecrest Campground & RV Park",
+        "hero_title": "Your Home Under the Pines",
+        "hero_subtitle": "Pinecrest Campground & RV Park",
+        "hero_description": "<p>Nestled on 85 wooded acres with a private 40-acre lake, Pinecrest offers the perfect escape into nature. Whether you prefer tent camping, RV sites with full hookups, or cozy cabins, we have a spot waiting for you.</p>",
+        "stats_items": [
+          "@stat-sites",
+          "@stat-acres",
+          "@stat-trails",
+          "@stat-lake"
+        ],
+        "featured_items_title": "Featured Campsites",
+        "cta_title": "Book Your Campsite Today",
+        "cta_description": "<p>Reserve your favorite campsite online or call our friendly office staff. Early booking is recommended for peak summer weekends and holiday periods.</p>",
+        "cta_primary": "Reserve a Site",
+        "cta_secondary": "View Campground Map"
+      }
+    },
+    {
+      "id": "campsite-lakefront-rv",
+      "type": "node.campsite",
+      "path": "/campsites/lakefront-rv-sites",
+      "values": {
+        "title": "Lakefront RV Sites",
+        "body": "<p>Our premium lakefront RV sites offer the best views at Pinecrest. Wake up to morning mist rising from the lake, fish right from your site, and enjoy stunning sunsets from your campfire ring. These spacious pull-through sites accommodate rigs up to 45 feet and include full hookups with 50-amp service.</p><h2>Site Details</h2><p>Sites L1 through L15 are arranged along the north shore of Pinecrest Lake, each with a private lake view. Concrete pads, a picnic table, fire ring, and mature shade trees are standard at every site.</p>",
+        "site_type": ["RV Full Hookup"],
+        "rate": "$65/night",
+        "max_occupancy": "8 guests",
+        "hookups": ["50-amp electric", "Water", "Sewer", "Cable TV", "WiFi"],
+        "features": ["Lake view", "Pull-through", "Concrete pad", "Fire ring", "Picnic table", "Shade trees"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80",
+          "alt": "RV campsite with lake view at sunset",
+          "title": "Lakefront RV Site"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "campsite-woodland-tent",
+      "type": "node.campsite",
+      "path": "/campsites/woodland-tent-sites",
+      "values": {
+        "title": "Woodland Tent Sites",
+        "body": "<p>Our woodland tent sites are tucked among towering white pines and hardwoods, offering a true back-to-nature experience with plenty of privacy between sites. Each site includes a level tent pad, fire ring, picnic table, and bear-proof food storage locker.</p><h2>Site Details</h2><p>Sites W1 through W30 are spread along shaded forest paths, most within a 5-minute walk of the central bathhouse. Water spigots are located at convenient intervals throughout the tent camping area.</p>",
+        "site_type": ["Tent Site"],
+        "rate": "$30/night",
+        "max_occupancy": "6 guests",
+        "hookups": [],
+        "features": ["Level tent pad", "Fire ring", "Picnic table", "Bear box", "Wooded privacy", "Near bathhouse"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+          "alt": "Tent pitched among tall pine trees in a wooded campsite",
+          "title": "Woodland Tent Site"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "campsite-rustic-cabin",
+      "type": "node.campsite",
+      "path": "/campsites/rustic-cabins",
+      "values": {
+        "title": "Rustic Pine Cabins",
+        "body": "<p>Our charming rustic cabins offer a step up from tent camping while keeping you close to nature. Each cabin sleeps up to six with a double bed, bunk beds, a small porch, and electricity. Bring your own bedding and cooking supplies, or add a linen package when you book.</p><h2>Cabin Features</h2><p>Eight cabins (C1-C8) are clustered near the lake with easy access to the swimming beach and boat launch. Each cabin has a covered porch with Adirondack chairs, an outdoor fire ring, and a picnic table.</p>",
+        "site_type": ["Cabin"],
+        "rate": "$95/night",
+        "max_occupancy": "6 guests",
+        "hookups": ["Electric only"],
+        "features": ["Double bed", "Bunk beds", "Covered porch", "Fire ring", "Lake access", "Electricity"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=800&q=80",
+          "alt": "Rustic wooden cabin nestled among pine trees",
+          "title": "Rustic Pine Cabin"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "campsite-glamping",
+      "type": "node.campsite",
+      "path": "/campsites/glamping-tents",
+      "values": {
+        "title": "Glamping Safari Tents",
+        "body": "<p>Experience camping in luxury with our safari-style glamping tents. Each canvas tent is furnished with a queen bed, nightstands, solar-powered string lights, and a private deck with valley views. Fresh linens, towels, and a coffee maker are included.</p><h2>Glamping Details</h2><p>Our four glamping tents (G1-G4) are positioned on a hillside overlooking the valley, providing maximum privacy and spectacular sunrise views. Each tent sits on a raised wooden platform with a private deck.</p>",
+        "site_type": ["Glamping"],
+        "rate": "$135/night",
+        "max_occupancy": "2 guests",
+        "hookups": ["Solar electric"],
+        "features": ["Queen bed", "Linens provided", "Private deck", "Valley view", "Coffee maker", "String lights"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?w=800&q=80",
+          "alt": "Luxury glamping tent with comfortable furnishings and string lights",
+          "title": "Glamping Safari Tent"
+        },
+        "featured": false
+      }
+    },
+    {
+      "id": "amenity-pool",
+      "type": "node.amenity",
+      "path": "/amenities/swimming-pool",
+      "values": {
+        "title": "Heated Swimming Pool & Splash Pad",
+        "body": "<p>Cool off in our heated outdoor swimming pool or let the kids play at the adjacent splash pad. The pool area includes comfortable lounge chairs, shade umbrellas, and a poolside snack bar serving ice cream, drinks, and light snacks.</p><h2>Pool Rules</h2><ul><li>Children under 12 must be accompanied by an adult</li><li>No glass containers in the pool area</li><li>Swim at your own risk - no lifeguard on duty</li><li>Pool towels not provided, please bring your own</li></ul>",
+        "amenity_category": ["Pool & Water"],
+        "location_on_property": "Central area, near the General Store",
+        "hours": "10:00 AM - 8:00 PM daily (Memorial Day to Labor Day)",
+        "included": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800&q=80",
+          "alt": "Outdoor swimming pool surrounded by trees",
+          "title": "Swimming Pool"
+        }
+      }
+    },
+    {
+      "id": "amenity-store",
+      "type": "node.amenity",
+      "path": "/amenities/general-store",
+      "values": {
+        "title": "Camp General Store",
+        "body": "<p>Forgot the marshmallows? Our well-stocked camp store has everything you need for a great camping trip, from firewood and ice to groceries, camping supplies, and souvenirs. We also carry local products including honey, maple syrup, and homemade jams.</p><h2>What We Carry</h2><ul><li>Firewood, kindling, and fire starters</li><li>Ice, beverages, and snacks</li><li>Basic groceries and canned goods</li><li>Camping gear and supplies</li><li>Fishing tackle and bait</li><li>Souvenirs and local products</li></ul>",
+        "amenity_category": ["General Store", "Convenience"],
+        "location_on_property": "Main entrance area, next to the check-in office",
+        "hours": "7:00 AM - 9:00 PM daily",
+        "included": false,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&q=80",
+          "alt": "Rustic camp general store with outdoor display",
+          "title": "Camp General Store"
+        }
+      }
+    },
+    {
+      "id": "amenity-bathhouse",
+      "type": "node.amenity",
+      "path": "/amenities/bathhouse",
+      "values": {
+        "title": "Modern Bathhouse & Laundry",
+        "body": "<p>Our recently renovated bathhouse features private shower stalls, accessible restrooms, and a coin-operated laundry facility. The bathhouse is cleaned three times daily to maintain high standards of hygiene and comfort.</p><h2>Facilities</h2><ul><li>12 private shower stalls with hot water</li><li>Accessible restroom stalls</li><li>6 coin-operated washers and dryers</li><li>Baby changing stations</li><li>Hair dryer stations</li></ul>",
+        "amenity_category": ["Restrooms & Showers"],
+        "location_on_property": "Central campground, between tent and RV areas",
+        "hours": "Open 24 hours",
+        "included": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
+          "alt": "Clean modern campground bathhouse facility",
+          "title": "Bathhouse"
+        }
+      }
+    },
+    {
+      "id": "activity-hiking",
+      "type": "node.activity",
+      "path": "/activities/hiking-trails",
+      "values": {
+        "title": "Hiking Trails",
+        "body": "<p>Explore 12 miles of well-maintained hiking trails winding through pine forests, along the lakeshore, and up to scenic overlooks with panoramic views of the surrounding countryside. Trail maps are available at the camp office and posted at all trailheads.</p><h2>Trail Guide</h2><ul><li><strong>Lakeshore Loop (1.5 miles, Easy)</strong> - Flat path circling Pinecrest Lake, perfect for families</li><li><strong>Pine Ridge Trail (3 miles, Moderate)</strong> - Climb through mature pine forest to the ridge overlook</li><li><strong>Deer Hollow Trail (4 miles, Moderate)</strong> - Follow the creek through a scenic hollow</li><li><strong>Summit Trail (3.5 miles, Challenging)</strong> - Steep climb to the highest point with 360-degree views</li></ul>",
+        "activity_type": ["Hiking"],
+        "difficulty": "Easy to Challenging (varies by trail)",
+        "duration": "30 minutes to 3 hours",
+        "best_season": "Year-round (snowshoe in winter)",
+        "equipment_provided": false,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80",
+          "alt": "Hikers on a forested trail through tall pine trees",
+          "title": "Hiking Trails"
+        }
+      }
+    },
+    {
+      "id": "activity-fishing",
+      "type": "node.activity",
+      "path": "/activities/fishing",
+      "values": {
+        "title": "Lake Fishing",
+        "body": "<p>Pinecrest Lake is stocked annually with rainbow trout, largemouth bass, and bluegill, making it a fantastic fishing destination for anglers of all skill levels. Fish from the shore, the fishing dock, or rent one of our rowboats or canoes for an on-the-water experience.</p><h2>Fishing Information</h2><ul><li>State fishing license required for ages 16+</li><li>Catch-and-release encouraged for bass over 18 inches</li><li>Rowboat and canoe rentals available at the dock</li><li>Fishing tackle and bait available at the General Store</li><li>Kids' fishing clinics held Saturday mornings in summer</li></ul>",
+        "activity_type": ["Fishing"],
+        "difficulty": "Easy (all skill levels)",
+        "duration": "1-4 hours",
+        "best_season": "May through October",
+        "equipment_provided": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80",
+          "alt": "Person fishing from a dock on a calm lake at sunrise",
+          "title": "Lake Fishing"
+        }
+      }
+    },
+    {
+      "id": "activity-kayaking",
+      "type": "node.activity",
+      "path": "/activities/kayaking-canoeing",
+      "values": {
+        "title": "Kayaking & Canoeing",
+        "body": "<p>Paddle across the calm waters of Pinecrest Lake or explore the scenic Cedar Creek, which flows from the lake through two miles of wetlands rich with wildlife. Single and tandem kayaks, canoes, and stand-up paddleboards are available for rent by the hour or day.</p><h2>Rental Rates</h2><ul><li>Single kayak: $15/hour, $45/day</li><li>Tandem kayak: $25/hour, $65/day</li><li>Canoe: $20/hour, $55/day</li><li>Stand-up paddleboard: $20/hour, $50/day</li></ul><p>Life jackets are provided with every rental. A brief orientation is required for first-time paddlers.</p>",
+        "activity_type": ["Kayaking"],
+        "difficulty": "Easy to Moderate",
+        "duration": "1-4 hours",
+        "best_season": "May through September",
+        "equipment_provided": true,
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1472745433479-4556f22e32c2?w=800&q=80",
+          "alt": "Kayakers paddling on a calm forest lake",
+          "title": "Kayaking"
+        }
+      }
+    },
+    {
+      "id": "about-page",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About Pinecrest Campground",
+        "body": "<p>The Mitchell family has been welcoming campers to Pinecrest since 1978. What started as a small tent camping area with a handful of sites has grown into an 85-acre, full-service campground and RV park while maintaining the family-friendly atmosphere and natural beauty that has kept guests coming back for generations.</p><h2>Our Philosophy</h2><p>We believe in providing a place where families can unplug from technology and reconnect with nature and each other. Our campground is designed to offer modern comforts without losing the authentic outdoor experience.</p><h2>Sustainability</h2><p>Pinecrest is committed to environmental stewardship. We use solar power for common area lighting, maintain a composting program, and have planted over 500 native trees in the past decade to enhance wildlife habitat.</p>"
+      }
+    },
+    {
+      "id": "rules-page",
+      "type": "node.page",
+      "path": "/campground-rules",
+      "values": {
+        "title": "Campground Rules & Policies",
+        "body": "<p>To ensure all guests have an enjoyable and safe experience, please observe the following campground rules.</p><h2>Quiet Hours</h2><p>Quiet hours are from 10:00 PM to 7:00 AM. Please be respectful of fellow campers during these hours.</p><h2>Check-In / Check-Out</h2><p>Check-in time is 2:00 PM. Check-out time is 11:00 AM. Early check-in may be available upon request, subject to availability.</p><h2>Pets</h2><p>Well-behaved pets are welcome at most campsites. Dogs must be leashed at all times and never left unattended. Please clean up after your pet. Pets are not permitted in cabins, the pool area, or the beach.</p><h2>Fires</h2><p>Campfires are permitted only in designated fire rings. Use only firewood purchased from our camp store (bringing outside firewood is prohibited to prevent invasive species). Fires must be fully extinguished before leaving your site or going to sleep.</p><h2>Cancellation Policy</h2><p>Full refund if cancelled 14+ days before arrival. 50% refund for cancellations 7-13 days before arrival. No refund for cancellations less than 7 days before arrival.</p>"
+      }
+    }
+  ]
+}
