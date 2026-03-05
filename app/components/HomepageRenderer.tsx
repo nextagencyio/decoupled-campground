@@ -145,7 +145,7 @@ export default function HomepageRenderer({ homepageContent }: HomepageRendererPr
                 <li><a href="/amenities" className="hover:text-accent-300 transition-colors">Amenities</a></li>
                 <li><a href="/activities" className="hover:text-accent-300 transition-colors">Activities</a></li>
                 <li><a href="/about" className="hover:text-accent-300 transition-colors">Our Story</a></li>
-                <li><a href="/contact" className="hover:text-accent-300 transition-colors">Contact & Directions</a></li>
+                <li><a href="/campsites" className="hover:text-accent-300 transition-colors">Contact & Directions</a></li>
               </ul>
             </div>
           </div>

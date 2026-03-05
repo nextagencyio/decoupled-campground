@@ -91,7 +91,7 @@ export default function Header() {
 
           <div className="flex items-center space-x-4">
             <Link
-              href="/contact"
+              href="/campsites"
               className="hidden sm:inline-flex items-center bg-primary-600 text-white px-5 py-2 rounded-full hover:bg-primary-700 transition-colors duration-200 font-semibold text-sm"
             >
               Book a Site
@@ -127,7 +127,7 @@ export default function Header() {
                 </Link>
               ))}
               <Link
-                href="/contact"
+                href="/campsites"
                 onClick={() => setMobileMenuOpen(false)}
                 className="mx-4 mt-2 inline-flex items-center justify-center bg-primary-600 text-white px-5 py-3 rounded-full hover:bg-primary-700 transition-colors duration-200 font-semibold text-sm"
               >

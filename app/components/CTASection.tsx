@@ -40,7 +40,7 @@ export default function CTASection({ homepageContent }: CTASectionProps) {
         )}
         <div className="flex justify-center gap-4 flex-wrap">
           <a
-            href="/contact"
+            href="/campsites"
             className="px-8 py-4 bg-accent-500 text-white rounded-full hover:bg-accent-400 transition-all duration-200 font-bold text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
             {primaryLabel}

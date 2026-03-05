@@ -46,7 +46,7 @@ export default function HeroSection({ homepageContent }: HeroSectionProps) {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="/contact"
+            href="/campsites"
             className="inline-flex items-center justify-center px-8 py-4 bg-accent-600 text-white rounded-full hover:bg-accent-700 transition-all duration-200 font-semibold text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
             Book a Site
