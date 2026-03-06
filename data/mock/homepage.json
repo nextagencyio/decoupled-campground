@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-sites",
               "title": "",
-              "number": "120",
+              "number": "120", "value": "120",
               "label": "Campsites"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-acres",
               "title": "",
-              "number": "85",
+              "number": "85", "value": "85",
               "label": "Wooded Acres"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-trails",
               "title": "",
-              "number": "12",
+              "number": "12", "value": "12",
               "label": "Miles of Trails"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-lake",
               "title": "",
-              "number": "40",
+              "number": "40", "value": "40",
               "label": "Acre Private Lake"
             }
           ],
