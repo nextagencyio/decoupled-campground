@@ -49,7 +49,7 @@ export default function StatsSection({ homepageContent }: StatsSectionProps) {
                   <IconComponent className="w-7 h-7 text-primary-700" />
                 </div>
                 <div className="text-3xl md:text-4xl font-bold text-primary-800 font-display mb-2">
-                  {stat.value || stat.statValue || stat.title}
+                  {stat.value || stat.number || stat.statValue || stat.title}
                 </div>
                 <div className="text-gray-600 font-medium">
                   {stat.label || stat.statLabel || stat.description?.processed?.replace(/<[^>]*>/g, '') || ''}
