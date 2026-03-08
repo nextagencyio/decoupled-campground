@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import ActivityCard from '../components/ActivityCard'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Activities | Pinecrest Campground',
