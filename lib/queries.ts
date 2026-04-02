@@ -12,10 +12,13 @@ export const GET_CAMPSITE_TEASERS = gql`
         changed { timestamp }
         ... on NodeCampsite {
           body { processed summary }
-          siteType
-          pricePerNight
+          siteType {
+            ... on TermSiteType { name }
+          }
+          rate
           maxOccupancy
           hookups
+          featured
           image {
             url
             alt
@@ -42,6 +45,12 @@ export const GET_AMENITY_TEASERS = gql`
         changed { timestamp }
         ... on NodeAmenity {
           body { processed }
+          amenityCategory {
+            ... on TermAmenityCategory { name }
+          }
+          locationOnProperty
+          hours
+          included
           image {
             url
             alt
@@ -68,8 +77,10 @@ export const GET_ACTIVITY_TEASERS = gql`
         changed { timestamp }
         ... on NodeActivity {
           body { processed summary }
-          difficultyLevel
+          difficulty
           duration
+          bestSeason
+          equipmentProvided
           image {
             url
             alt
@@ -95,14 +106,14 @@ export const GET_HOMEPAGE_DATA = gql`
         heroTitle
         heroSubtitle
         heroDescription { processed }
-        featuresItems {
-          ... on ParagraphFeatureItem {
+        statsItems {
+          ... on ParagraphStatItem {
             id
-            title
-            description { processed }
-            icon
+            number
+            label
           }
         }
+        featuredItemsTitle
         ctaTitle
         ctaDescription { processed }
         ctaPrimary
@@ -126,10 +137,13 @@ export const GET_NODE_BY_PATH = gql`
             id
             title
             body { processed }
-            siteType
-            pricePerNight
+            siteType {
+              ... on TermSiteType { name }
+            }
+            rate
             maxOccupancy
             hookups
+            featured
             image {
               url alt width height
               variations(styles: [LARGE, MEDIUM, THUMBNAIL]) {
@@ -141,6 +155,12 @@ export const GET_NODE_BY_PATH = gql`
             id
             title
             body { processed }
+            amenityCategory {
+              ... on TermAmenityCategory { name }
+            }
+            locationOnProperty
+            hours
+            included
             image {
               url alt width height
               variations(styles: [LARGE, MEDIUM, THUMBNAIL]) {
@@ -152,8 +172,10 @@ export const GET_NODE_BY_PATH = gql`
             id
             title
             body { processed }
-            difficultyLevel
+            difficulty
             duration
+            bestSeason
+            equipmentProvided
             image {
               url alt width height
               variations(styles: [LARGE, MEDIUM, THUMBNAIL]) {
@@ -167,14 +189,14 @@ export const GET_NODE_BY_PATH = gql`
             heroTitle
             heroSubtitle
             heroDescription { processed }
-            featuresItems {
-              ... on ParagraphFeatureItem {
+            statsItems {
+              ... on ParagraphStatItem {
                 id
-                title
-                description { processed }
-                icon
+                number
+                label
               }
             }
+            featuredItemsTitle
             ctaTitle
             ctaDescription { processed }
             ctaPrimary

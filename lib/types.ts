@@ -31,10 +31,12 @@ export interface DrupalCampsite extends DrupalNode {
     processed: string
     summary?: string
   }
-  siteType?: string
-  pricePerNight?: string
-  maxOccupancy?: number
-  hookups?: string
+  siteType?: Array<{ name: string }>
+  rate?: string
+  maxOccupancy?: string
+  hookups?: string[]
+  features?: string[]
+  featured?: boolean
   image?: {
     url: string
     alt?: string
@@ -53,6 +55,10 @@ export interface DrupalAmenity extends DrupalNode {
   body?: {
     processed: string
   }
+  amenityCategory?: Array<{ name: string }>
+  locationOnProperty?: string
+  hours?: string
+  included?: boolean
   image?: {
     url: string
     alt?: string
@@ -72,8 +78,10 @@ export interface DrupalActivity extends DrupalNode {
     processed: string
     summary?: string
   }
-  difficultyLevel?: string
+  difficulty?: string
   duration?: string
+  bestSeason?: string
+  equipmentProvided?: boolean
   image?: {
     url: string
     alt?: string
@@ -100,7 +108,8 @@ export interface DrupalHomepage extends DrupalNode {
   heroDescription?: {
     processed: string
   }
-  featuresItems?: DrupalFeature[]
+  statsItems?: DrupalStatItem[]
+  featuredItemsTitle?: string
   ctaTitle?: string
   ctaDescription?: {
     processed: string
@@ -109,13 +118,10 @@ export interface DrupalHomepage extends DrupalNode {
   ctaSecondary?: string
 }
 
-export interface DrupalFeature {
+export interface DrupalStatItem {
   id: string
-  title: string
-  description?: {
-    processed: string
-  }
-  icon?: string
+  number: string
+  label: string
 }
 
 export interface HomepageData {
