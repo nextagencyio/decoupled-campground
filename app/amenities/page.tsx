@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 async function getAmenities() {
   try {
     const client = getClient()
-    const { data } = await client.raw(GET_AMENITY_TEASERS, { first: 50 })
+    const data = await client.raw(GET_AMENITY_TEASERS, { first: 50 })
     return data?.nodeAmenities?.nodes || []
   } catch (error) {
     console.error('Error fetching amenities:', error)
@@ -62,7 +62,7 @@ export default async function AmenitiesPage() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {items.map((item) => (
+              {items.map((item: any) => (
                 <AmenityCard key={item.id} item={item} />
               ))}
             </div>
