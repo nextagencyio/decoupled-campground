@@ -1,6 +1,5 @@
+import { getClient } from '@/lib/drupal-client'
 import { Metadata } from 'next'
-import { headers } from 'next/headers'
-import { getServerApolloClient } from '@/lib/apollo-client'
 import { GET_ACTIVITY_TEASERS } from '@/lib/queries'
 import { ActivityTeaserData } from '@/lib/types'
 import Header from '../components/Header'
@@ -16,13 +15,8 @@ export const metadata: Metadata = {
 
 async function getActivities() {
   try {
-    const requestHeaders = await headers()
-    const apolloClient = getServerApolloClient(requestHeaders)
-    const { data } = await apolloClient.query<ActivityTeaserData>({
-      query: GET_ACTIVITY_TEASERS,
-      variables: { first: 50 },
-      fetchPolicy: 'cache-first',
-    })
+    const client = getClient()
+    const { data } = await client.raw(GET_ACTIVITY_TEASERS, { first: 50 })
     return data?.nodeActivities?.nodes || []
   } catch (error) {
     console.error('Error fetching activities:', error)
